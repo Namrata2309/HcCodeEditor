@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Language Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- CodeMirror -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/htmlmixed/htmlmixed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/clike/clike.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/python/python.min.js"></script>
+    <!-- Skulpt for Python -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/skulpt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/skulpt@1.2.0/skulpt-stdlib.min.js"></script> -->
+    <script src="lib/skulpt.min.js"></script>
+    <script src="lib/skulpt-stdlib.js"></script>
+</head>
+<body>
+    <h1>Multi-Language Code Editor</h1>
+    <label for="language-select">Choose Language:</label>
+    <select id="language-select">
+        <option value="htmlmixed">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+        <option value="text/x-c++src">C++</option>
+        <option value="python">Python</option>
+    </select>
+    <div id="editor"></div>
+    <button onclick="runCode()">Run Code</button>
+    <h3>Output:</h3>
+    <pre id="output"></pre>
+    <script src="script.js"></script>
+</body>
+</html>
