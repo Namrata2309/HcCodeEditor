@@ -4,6 +4,109 @@ body {
     font-family: Arial, sans-serif;
     padding: 20px;
 }
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+/* Dropdown and Button */
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select {
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+}
+
+button {
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357ab8;
+}
+
+/* CodeMirror Editor */
+#editor {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    height: 300px;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+/* Output Section */
+h3 {
+    color: #555;
+    margin-top: 20px;
+}
+
+pre {
+    background-color: #1e1e2f;
+    color: #d4d4d4;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    select {
+        font-size: 14px;
+    }
+
+    #editor {
+        height: 200px;
+    }
+
+    pre {
+        font-size: 14px;
+    }
+}
 
 #editor {
     border: 1px solid #ddd;
